@@ -1,0 +1,99 @@
+header {
+    background-color: #4b66aa;
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: lightblue; /* Change this color to whatever you prefer */
+}
+
+/* Top Bar (for Logo) */
+.top-bar {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Banner Container */
+.banner-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-height: 300px; /* Set max height for the banner */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+.banner-container .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Full-Width Banner Image */
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Set the max height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block;
+}
+
+/* Search Bar Container */
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Search Bar Input */
+#search-bar {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Search Results Dropdown */
+#search-results {
+    position: absolute;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#search-results a {
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+#search-results a:hover {
+    background: #f0f0f0;
+}
+

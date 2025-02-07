@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
+    <div class="top-bar">
+        <h1>Mementomori</h1>
+    </div>
+
     <header>
         <nav>
             <ul>
@@ -15,12 +22,28 @@
                 <li><a href="articles.html">Articles</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search articles..." onkeyup="filterArticles()">
+                <div id="search-results"></div>
+            </div>
         </nav>
     </header>
 
+
+    <div class="banner-container">
+        <img src="../assets/images/banner.jpg" alt="Banner Image" class="banner-img">
+    </div>
+
     <main>
         <h1>Articles</h1>
-        <p>Welcome to the articles page. More content coming soon.</p>
+        <div class="articles-grid">
+            <a href="articles/article1.html" class="article-box">Article 1</a>
+            <a href="articles/article2.html" class="article-box">Article 2</a>
+            <a href="articles/article3.html" class="article-box">Article 3</a>
+            <a href="articles/article4.html" class="article-box">Article 4</a>
+            <a href="articles/article5.html" class="article-box">Article 5</a>
+            <a href="articles/article6.html" class="article-box">Article 6</a>
+        </div>
     </main>
 
     <footer>

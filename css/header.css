@@ -1,5 +1,5 @@
 header {
-    background-color: #4b66aa;
+    background-color: #6d7ca1;
     padding: 5px 0;
 }
 
@@ -25,7 +25,7 @@ nav ul li a:hover {
 
 /* Top Bar (for Logo) */
 .top-bar {
-    background-color: #222;
+    background-color: #ebebeb;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -95,5 +95,20 @@ nav ul li a:hover {
 
 #search-results a:hover {
     background: #f0f0f0;
+}
+
+/* Logo Container */
+.logo_container {
+    display: flex;
+    padding: 15px 0;
+    justify-content: center; /* Centers the logo horizontally */
+    align-items: center; /* Centers the logo vertically */
+    height: 80px; /* Adjust height to fit within the top bar */
+}
+
+/* Logo Image */
+.logo_container img {
+    max-height: 80px; /* Ensures the logo stays small */
+    width: auto; /* Maintains aspect ratio */
 }
 
